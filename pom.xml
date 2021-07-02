@@ -164,7 +164,7 @@
     </build>
     <profiles>
         <profile>
-            <id>wetAMD</id>
+            <id>Booking</id>
             <build>
                 <plugins>
                     <plugin>
@@ -177,7 +177,7 @@
                                 <env>${env}</env>
                             </systemPropertyVariables>
                             <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/wetAMD.xml</suiteXmlFile>
+                                <suiteXmlFile>src/test/resources/TestSuite.xml</suiteXmlFile>
                             </suiteXmlFiles>
                         </configuration>
                     </plugin>

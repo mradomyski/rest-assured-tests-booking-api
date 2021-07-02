@@ -2,7 +2,7 @@ package pl.mradomyski.restassured.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
-import javafx.util.Pair;
+import pl.mradomyski.restassured.pojos.Pair;
 import pl.mradomyski.restassured.pojos.Booking;
 import pl.mradomyski.restassured.pojos.BookingDates;
 import pl.mradomyski.restassured.requests.Authorization;

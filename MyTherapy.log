@@ -6655,3 +6655,356 @@ DEBUG 2021-07-02 02:32:32,220 [main][HTTPBuilder.java:548] : Parsed data to inst
 DEBUG 2021-07-02 02:32:32,221 [main][Wire.java:87] :  << "{"firstname":"zvvovx","lastname":"u6kvw9a7","totalprice":8,"depositpaid":true,"bookingdates":{"checkin":"2034-06-08","checkout":"2044-06-02"},"additionalneeds":"1jxpqe"}"
 DEBUG 2021-07-02 02:32:32,222 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@68ed3f30
 DEBUG 2021-07-02 02:32:32,222 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:02,106 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:02,191 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:02,889 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:02,890 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:02,891 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:02,892 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:02,892 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:02,893 [main][DefaultClientConnection.java:274] : Sending request: GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:02,893 [main][Wire.java:73] :  >> "GET /booking HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:02,894 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:02,894 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:02,895 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:02,895 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:02,896 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:02,896 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:02,896 [main][DefaultClientConnection.java:278] : >> GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:02,897 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:02,898 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:02,898 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:02,898 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:02,899 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:05,070 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:05,074 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:05,075 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:05,076 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:05,076 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:05,077 [main][Wire.java:73] :  << "Content-Length: 162[\r][\n]"
+DEBUG 2021-07-02 10:34:05,077 [main][Wire.java:73] :  << "Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"[\r][\n]"
+DEBUG 2021-07-02 10:34:05,078 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:05 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:05,079 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:05,079 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:05,081 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:05,082 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:05,083 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:05,084 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:05,084 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:05,084 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:05,085 [main][DefaultClientConnection.java:265] : << Content-Length: 162
+DEBUG 2021-07-02 10:34:05,085 [main][DefaultClientConnection.java:265] : << Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"
+DEBUG 2021-07-02 10:34:05,086 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:05 GMT
+DEBUG 2021-07-02 10:34:05,086 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:05,092 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:05,120 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:05,121 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:05,180 [main][Wire.java:87] :  << "[{"bookingid":10},{"bookingid":7},{"bookingid":9},{"bookingid":6},{"bookingid":8},{"bookingid":4},{"bookingid":1},{"bookingid":3},{"bookingid":2},{"bookingid":5}]"
+DEBUG 2021-07-02 10:34:05,182 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@30db5536
+DEBUG 2021-07-02 10:34:05,182 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:06,008 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:06,009 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:06,557 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:06,557 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:06,558 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:06,558 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:06,558 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:06,558 [main][DefaultClientConnection.java:274] : Sending request: POST /auth HTTP/1.1
+DEBUG 2021-07-02 10:34:06,559 [main][Wire.java:73] :  >> "POST /auth HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:06,559 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:06,559 [main][Wire.java:73] :  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG 2021-07-02 10:34:06,560 [main][Wire.java:73] :  >> "Content-Length: 56[\r][\n]"
+DEBUG 2021-07-02 10:34:06,560 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:06,560 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:06,561 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:06,562 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:06,562 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:06,563 [main][DefaultClientConnection.java:278] : >> POST /auth HTTP/1.1
+DEBUG 2021-07-02 10:34:06,563 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:06,564 [main][DefaultClientConnection.java:281] : >> Content-Type: application/json; charset=UTF-8
+DEBUG 2021-07-02 10:34:06,564 [main][DefaultClientConnection.java:281] : >> Content-Length: 56
+DEBUG 2021-07-02 10:34:06,565 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:06,565 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:06,565 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:06,566 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:06,566 [main][Wire.java:73] :  >> "{[\n]"
+DEBUG 2021-07-02 10:34:06,567 [main][Wire.java:73] :  >> "  "username" : "admin",[\n]"
+DEBUG 2021-07-02 10:34:06,567 [main][Wire.java:73] :  >> "  "password" : "password123"[\n]"
+DEBUG 2021-07-02 10:34:06,568 [main][Wire.java:87] :  >> "}"
+DEBUG 2021-07-02 10:34:06,715 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:06,716 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:06,717 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:06,717 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:06,718 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:06,719 [main][Wire.java:73] :  << "Content-Length: 27[\r][\n]"
+DEBUG 2021-07-02 10:34:06,719 [main][Wire.java:73] :  << "Etag: W/"1b-siA4m3JNMRRv5Ca3hj8gzY/gfEI"[\r][\n]"
+DEBUG 2021-07-02 10:34:06,720 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:06 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:06,720 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:06,721 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:06,721 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:06,722 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:06,723 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:06,723 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:06,724 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:06,724 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:06,725 [main][DefaultClientConnection.java:265] : << Content-Length: 27
+DEBUG 2021-07-02 10:34:06,725 [main][DefaultClientConnection.java:265] : << Etag: W/"1b-siA4m3JNMRRv5Ca3hj8gzY/gfEI"
+DEBUG 2021-07-02 10:34:06,726 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:06 GMT
+DEBUG 2021-07-02 10:34:06,726 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:06,727 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:06,728 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:06,729 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:06,733 [main][Wire.java:87] :  << "{"token":"d0338670a011794"}"
+DEBUG 2021-07-02 10:34:06,734 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@3c17bd0b
+DEBUG 2021-07-02 10:34:06,734 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:06,775 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:06,776 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:07,320 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:07,321 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:07,321 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:07,321 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:07,322 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:07,322 [main][DefaultClientConnection.java:274] : Sending request: PUT /booking/8 HTTP/1.1
+DEBUG 2021-07-02 10:34:07,323 [main][Wire.java:73] :  >> "PUT /booking/8 HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:07,323 [main][Wire.java:73] :  >> "Cookie: token=d0338670a011794[\r][\n]"
+DEBUG 2021-07-02 10:34:07,324 [main][Wire.java:73] :  >> "Accept: application/json[\r][\n]"
+DEBUG 2021-07-02 10:34:07,324 [main][Wire.java:73] :  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG 2021-07-02 10:34:07,324 [main][Wire.java:73] :  >> "Content-Length: 169[\r][\n]"
+DEBUG 2021-07-02 10:34:07,325 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:07,325 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:07,325 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:07,326 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:07,326 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:07,327 [main][DefaultClientConnection.java:278] : >> PUT /booking/8 HTTP/1.1
+DEBUG 2021-07-02 10:34:07,327 [main][DefaultClientConnection.java:281] : >> Cookie: token=d0338670a011794
+DEBUG 2021-07-02 10:34:07,327 [main][DefaultClientConnection.java:281] : >> Accept: application/json
+DEBUG 2021-07-02 10:34:07,328 [main][DefaultClientConnection.java:281] : >> Content-Type: application/json; charset=UTF-8
+DEBUG 2021-07-02 10:34:07,328 [main][DefaultClientConnection.java:281] : >> Content-Length: 169
+DEBUG 2021-07-02 10:34:07,329 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:07,329 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:07,330 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:07,331 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:07,331 [main][Wire.java:87] :  >> "{"firstname":"wb7s1zz","lastname":"xhq5z","totalprice":8,"depositpaid":false,"bookingdates":{"checkin":"1975-12-23","checkout":"1959-05-12"},"additionalneeds":"9jintis"}"
+DEBUG 2021-07-02 10:34:07,471 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:07,473 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:07,474 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:07,474 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:07,475 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:07,475 [main][Wire.java:73] :  << "Content-Length: 169[\r][\n]"
+DEBUG 2021-07-02 10:34:07,476 [main][Wire.java:73] :  << "Etag: W/"a9-iCFXRq35ACVyfEiFn6HEbo/ANp8"[\r][\n]"
+DEBUG 2021-07-02 10:34:07,476 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:07 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:07,477 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:07,477 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:07,478 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:07,478 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:07,478 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:07,479 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:07,479 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:07,479 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:07,480 [main][DefaultClientConnection.java:265] : << Content-Length: 169
+DEBUG 2021-07-02 10:34:07,480 [main][DefaultClientConnection.java:265] : << Etag: W/"a9-iCFXRq35ACVyfEiFn6HEbo/ANp8"
+DEBUG 2021-07-02 10:34:07,480 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:07 GMT
+DEBUG 2021-07-02 10:34:07,481 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:07,481 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:07,482 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:07,482 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:07,501 [main][Wire.java:87] :  << "{"firstname":"wb7s1zz","lastname":"xhq5z","totalprice":8,"depositpaid":false,"bookingdates":{"checkin":"1975-12-23","checkout":"1959-05-12"},"additionalneeds":"9jintis"}"
+DEBUG 2021-07-02 10:34:07,501 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@819fb19
+DEBUG 2021-07-02 10:34:07,502 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:07,507 [Finalizer][DefaultClientConnection.java:180] : Connection 0.0.0.0:50263<->54.205.8.205:443 closed
+DEBUG 2021-07-02 10:34:07,589 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:07,590 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:08,119 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:08,119 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:08,120 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:08,120 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:08,121 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:08,121 [main][DefaultClientConnection.java:274] : Sending request: GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:08,122 [main][Wire.java:73] :  >> "GET /booking HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:08,122 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:08,123 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:08,123 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:08,124 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:08,124 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:08,124 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:08,125 [main][DefaultClientConnection.java:278] : >> GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:08,125 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:08,125 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:08,126 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:08,126 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:08,126 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:08,264 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:08,265 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:08,265 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:08,266 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:08,267 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:08,268 [main][Wire.java:73] :  << "Content-Length: 162[\r][\n]"
+DEBUG 2021-07-02 10:34:08,268 [main][Wire.java:73] :  << "Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"[\r][\n]"
+DEBUG 2021-07-02 10:34:08,269 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:08 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:08,269 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:08,270 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:08,271 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:08,271 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:08,272 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:08,273 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:08,273 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:08,274 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:08,274 [main][DefaultClientConnection.java:265] : << Content-Length: 162
+DEBUG 2021-07-02 10:34:08,275 [main][DefaultClientConnection.java:265] : << Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"
+DEBUG 2021-07-02 10:34:08,275 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:08 GMT
+DEBUG 2021-07-02 10:34:08,275 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:08,276 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:08,277 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:08,278 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:08,280 [main][Wire.java:87] :  << "[{"bookingid":10},{"bookingid":7},{"bookingid":9},{"bookingid":6},{"bookingid":8},{"bookingid":4},{"bookingid":1},{"bookingid":3},{"bookingid":2},{"bookingid":5}]"
+DEBUG 2021-07-02 10:34:08,280 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38f502fc
+DEBUG 2021-07-02 10:34:08,281 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:08,323 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:08,323 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:08,871 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:08,872 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:08,873 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:08,873 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:08,874 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:08,874 [main][DefaultClientConnection.java:274] : Sending request: GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:08,874 [main][Wire.java:73] :  >> "GET /booking HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:08,875 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:08,875 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:08,875 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:08,876 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:08,876 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:08,876 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:08,876 [main][DefaultClientConnection.java:278] : >> GET /booking HTTP/1.1
+DEBUG 2021-07-02 10:34:08,877 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:08,877 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:08,877 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:08,877 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:08,878 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:09,014 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:09,015 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:09,016 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:09,017 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:09,017 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:09,018 [main][Wire.java:73] :  << "Content-Length: 162[\r][\n]"
+DEBUG 2021-07-02 10:34:09,018 [main][Wire.java:73] :  << "Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"[\r][\n]"
+DEBUG 2021-07-02 10:34:09,018 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:09 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:09,019 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:09,019 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:09,020 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:09,020 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:09,020 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:09,020 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:09,021 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:09,021 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:09,021 [main][DefaultClientConnection.java:265] : << Content-Length: 162
+DEBUG 2021-07-02 10:34:09,022 [main][DefaultClientConnection.java:265] : << Etag: W/"a2-I80X650jwevSfBhC57WVy+YV+u4"
+DEBUG 2021-07-02 10:34:09,022 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:09 GMT
+DEBUG 2021-07-02 10:34:09,022 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:09,023 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:09,024 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:09,024 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:09,027 [main][Wire.java:87] :  << "[{"bookingid":10},{"bookingid":7},{"bookingid":9},{"bookingid":6},{"bookingid":8},{"bookingid":4},{"bookingid":1},{"bookingid":3},{"bookingid":2},{"bookingid":5}]"
+DEBUG 2021-07-02 10:34:09,028 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1bfa5a13
+DEBUG 2021-07-02 10:34:09,028 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:09,071 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:09,072 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:09,614 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:09,615 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:09,616 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:09,617 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:09,617 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:09,617 [main][DefaultClientConnection.java:274] : Sending request: GET /booking/5 HTTP/1.1
+DEBUG 2021-07-02 10:34:09,618 [main][Wire.java:73] :  >> "GET /booking/5 HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:09,618 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:09,619 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:09,619 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:09,620 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:09,620 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:09,621 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:09,621 [main][DefaultClientConnection.java:278] : >> GET /booking/5 HTTP/1.1
+DEBUG 2021-07-02 10:34:09,621 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:09,621 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:09,622 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:09,622 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:09,622 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:09,756 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:09,758 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:09,758 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:09,759 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:09,759 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:09,760 [main][Wire.java:73] :  << "Content-Length: 139[\r][\n]"
+DEBUG 2021-07-02 10:34:09,760 [main][Wire.java:73] :  << "Etag: W/"8b-lSwZFhNF+2ncViBhYB3zsMzgzvw"[\r][\n]"
+DEBUG 2021-07-02 10:34:09,760 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:09 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:09,761 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:09,761 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:09,762 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:09,762 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:09,762 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:09,763 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:09,763 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:09,763 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:09,763 [main][DefaultClientConnection.java:265] : << Content-Length: 139
+DEBUG 2021-07-02 10:34:09,764 [main][DefaultClientConnection.java:265] : << Etag: W/"8b-lSwZFhNF+2ncViBhYB3zsMzgzvw"
+DEBUG 2021-07-02 10:34:09,764 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:09 GMT
+DEBUG 2021-07-02 10:34:09,764 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:09,765 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:09,767 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:09,767 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:09,770 [main][Wire.java:87] :  << "{"firstname":"Eric","lastname":"Brown","totalprice":203,"depositpaid":true,"bookingdates":{"checkin":"2021-06-29","checkout":"2021-06-30"}}"
+DEBUG 2021-07-02 10:34:09,770 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@374b6e33
+DEBUG 2021-07-02 10:34:09,771 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:09,796 [main][BasicClientConnectionManager.java:161] : Get connection for route {s}->https://restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:09,797 [main][DefaultClientConnectionOperator.java:177] : Connecting to restful-booker.herokuapp.com:443
+DEBUG 2021-07-02 10:34:10,329 [main][RequestAddCookies.java:123] : CookieSpec selected: ignoreCookies
+DEBUG 2021-07-02 10:34:10,329 [main][RequestAuthCache.java:77] : Auth cache not set in the context
+DEBUG 2021-07-02 10:34:10,330 [main][RequestTargetAuthentication.java:80] : Target auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:10,330 [main][RequestProxyAuthentication.java:89] : Proxy auth state: UNCHALLENGED
+DEBUG 2021-07-02 10:34:10,330 [main][DefaultRequestDirector.java:682] : Attempt 1 to execute request
+DEBUG 2021-07-02 10:34:10,331 [main][DefaultClientConnection.java:274] : Sending request: POST /auth HTTP/1.1
+DEBUG 2021-07-02 10:34:10,331 [main][Wire.java:73] :  >> "POST /auth HTTP/1.1[\r][\n]"
+DEBUG 2021-07-02 10:34:10,331 [main][Wire.java:73] :  >> "Accept: */*[\r][\n]"
+DEBUG 2021-07-02 10:34:10,332 [main][Wire.java:73] :  >> "Content-Type: application/json; charset=UTF-8[\r][\n]"
+DEBUG 2021-07-02 10:34:10,332 [main][Wire.java:73] :  >> "Content-Length: 56[\r][\n]"
+DEBUG 2021-07-02 10:34:10,332 [main][Wire.java:73] :  >> "Host: restful-booker.herokuapp.com[\r][\n]"
+DEBUG 2021-07-02 10:34:10,333 [main][Wire.java:73] :  >> "Connection: Keep-Alive[\r][\n]"
+DEBUG 2021-07-02 10:34:10,333 [main][Wire.java:73] :  >> "User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)[\r][\n]"
+DEBUG 2021-07-02 10:34:10,334 [main][Wire.java:73] :  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+DEBUG 2021-07-02 10:34:10,334 [main][Wire.java:73] :  >> "[\r][\n]"
+DEBUG 2021-07-02 10:34:10,335 [main][DefaultClientConnection.java:278] : >> POST /auth HTTP/1.1
+DEBUG 2021-07-02 10:34:10,335 [main][DefaultClientConnection.java:281] : >> Accept: */*
+DEBUG 2021-07-02 10:34:10,336 [main][DefaultClientConnection.java:281] : >> Content-Type: application/json; charset=UTF-8
+DEBUG 2021-07-02 10:34:10,336 [main][DefaultClientConnection.java:281] : >> Content-Length: 56
+DEBUG 2021-07-02 10:34:10,336 [main][DefaultClientConnection.java:281] : >> Host: restful-booker.herokuapp.com
+DEBUG 2021-07-02 10:34:10,336 [main][DefaultClientConnection.java:281] : >> Connection: Keep-Alive
+DEBUG 2021-07-02 10:34:10,337 [main][DefaultClientConnection.java:281] : >> User-Agent: Apache-HttpClient/4.5.3 (Java/16.0.1)
+DEBUG 2021-07-02 10:34:10,337 [main][DefaultClientConnection.java:281] : >> Accept-Encoding: gzip,deflate
+DEBUG 2021-07-02 10:34:10,338 [main][Wire.java:73] :  >> "{[\n]"
+DEBUG 2021-07-02 10:34:10,338 [main][Wire.java:73] :  >> "  "username" : "admin",[\n]"
+DEBUG 2021-07-02 10:34:10,338 [main][Wire.java:73] :  >> "  "password" : "password123"[\n]"
+DEBUG 2021-07-02 10:34:10,338 [main][Wire.java:87] :  >> "}"
+DEBUG 2021-07-02 10:34:10,474 [main][Wire.java:73] :  << "HTTP/1.1 200 OK[\r][\n]"
+DEBUG 2021-07-02 10:34:10,476 [main][Wire.java:73] :  << "Server: Cowboy[\r][\n]"
+DEBUG 2021-07-02 10:34:10,476 [main][Wire.java:73] :  << "Connection: keep-alive[\r][\n]"
+DEBUG 2021-07-02 10:34:10,477 [main][Wire.java:73] :  << "X-Powered-By: Express[\r][\n]"
+DEBUG 2021-07-02 10:34:10,477 [main][Wire.java:73] :  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+DEBUG 2021-07-02 10:34:10,478 [main][Wire.java:73] :  << "Content-Length: 27[\r][\n]"
+DEBUG 2021-07-02 10:34:10,478 [main][Wire.java:73] :  << "Etag: W/"1b-GFR0juKrDNlD34wq5bseHUVYsE8"[\r][\n]"
+DEBUG 2021-07-02 10:34:10,479 [main][Wire.java:73] :  << "Date: Fri, 02 Jul 2021 08:34:10 GMT[\r][\n]"
+DEBUG 2021-07-02 10:34:10,479 [main][Wire.java:73] :  << "Via: 1.1 vegur[\r][\n]"
+DEBUG 2021-07-02 10:34:10,479 [main][Wire.java:73] :  << "[\r][\n]"
+DEBUG 2021-07-02 10:34:10,480 [main][DefaultClientConnection.java:259] : Receiving response: HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:10,480 [main][DefaultClientConnection.java:262] : << HTTP/1.1 200 OK
+DEBUG 2021-07-02 10:34:10,480 [main][DefaultClientConnection.java:265] : << Server: Cowboy
+DEBUG 2021-07-02 10:34:10,481 [main][DefaultClientConnection.java:265] : << Connection: keep-alive
+DEBUG 2021-07-02 10:34:10,481 [main][DefaultClientConnection.java:265] : << X-Powered-By: Express
+DEBUG 2021-07-02 10:34:10,481 [main][DefaultClientConnection.java:265] : << Content-Type: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:10,482 [main][DefaultClientConnection.java:265] : << Content-Length: 27
+DEBUG 2021-07-02 10:34:10,482 [main][DefaultClientConnection.java:265] : << Etag: W/"1b-GFR0juKrDNlD34wq5bseHUVYsE8"
+DEBUG 2021-07-02 10:34:10,482 [main][DefaultClientConnection.java:265] : << Date: Fri, 02 Jul 2021 08:34:10 GMT
+DEBUG 2021-07-02 10:34:10,483 [main][DefaultClientConnection.java:265] : << Via: 1.1 vegur
+DEBUG 2021-07-02 10:34:10,483 [main][DefaultRequestDirector.java:509] : Connection can be kept alive indefinitely
+DEBUG 2021-07-02 10:34:10,484 [main][HTTPBuilder.java:545] : Parsing response as: application/json; charset=utf-8
+DEBUG 2021-07-02 10:34:10,484 [main][HTTPBuilder.java:548] : Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+DEBUG 2021-07-02 10:34:10,486 [main][Wire.java:87] :  << "{"token":"76fb506a622bcab"}"
+DEBUG 2021-07-02 10:34:10,486 [main][BasicClientConnectionManager.java:200] : Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@56b9d43f
+DEBUG 2021-07-02 10:34:10,486 [main][BasicClientConnectionManager.java:225] : Connection can be kept alive indefinitely
