@@ -12,19 +12,19 @@ import java.net.URISyntaxException;
 
 import static pl.mradomyski.restassured.requests.Authorization.getToken;
 import static pl.mradomyski.restassured.requests.Authorization.parseForAccessToken;
+import static pl.mradomyski.restassured.utils.CommonActions.getAccessToken;
 
-public class BookingTest extends TestBase {
+public class AuthorizationTest extends TestBase {
 
 
-    private final Logger logger = LogManager.getLogger(BookingTest.class);
+    private final Logger logger = LogManager.getLogger(AuthorizationTest.class);
 
 
     @Test
     @Step("Get access token")
     public void giveMeAccessToken() throws URISyntaxException, IOException {
 
-        Response tokenResponse = getToken();
-        String accessToken = parseForAccessToken(tokenResponse);
+        String accessToken = getAccessToken();
         Assert.assertNotNull(accessToken);
 
         System.out.println("ACCESS TOKEN: " + accessToken);

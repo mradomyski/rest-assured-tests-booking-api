@@ -1,6 +1,5 @@
 package pl.mradomyski.restassured.requests;
 
-import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -11,16 +10,15 @@ import java.net.URISyntaxException;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
+import static pl.mradomyski.restassured.utils.CommonActions.getJsonBodyString;
 
 public class Authorization {
 
     public static Response getToken() throws URISyntaxException, IOException {
-        JSONUtils jsonUtils = new JSONUtils();
-        String jsonBody = jsonUtils.generateStringifiedJSONFromResource(
-                "/testdata/user-login.json");
+        String jsonBody = getJsonBodyString("/testdata/user-login.json");
 
         return
-                given().filter(new AllureRestAssured())
+                given()
                         .contentType(ContentType.JSON)
                         .body(jsonBody)
                         .when()
