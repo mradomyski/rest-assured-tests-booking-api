@@ -3,7 +3,6 @@ package pl.mradomyski.restassured.requests;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import pl.mradomyski.restassured.utils.JSONUtils;
 
 import java.io.IOException;
 import java.net.URISyntaxException;

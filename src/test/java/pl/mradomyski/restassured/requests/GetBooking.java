@@ -2,7 +2,6 @@ package pl.mradomyski.restassured.requests;
 
 import io.restassured.filter.log.LogDetail;
 import io.restassured.response.Response;
-import pl.mradomyski.restassured.pojos.Booking;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;

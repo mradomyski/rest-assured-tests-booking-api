@@ -1,21 +1,15 @@
 package pl.mradomyski.restassured.requests;
 
-import com.fasterxml.jackson.core.JsonGenerationException;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import pl.mradomyski.restassured.pojos.Booking;
-import pl.mradomyski.restassured.utils.BookingRandomizer;
-import pl.mradomyski.restassured.utils.CommonActions;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
 
 import static io.restassured.RestAssured.given;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
-import static pl.mradomyski.restassured.utils.CommonActions.*;
+import static pl.mradomyski.restassured.utils.CommonActions.getAccessToken;
 
 public class UpdateBooking {
 

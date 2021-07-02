@@ -48,6 +48,6 @@ public class BookingDates {
     @Override
     public String toString() {
         return "\"checkin\": \"" + checkin +
-                "\", \"checkout\": \"" + checkout +"\"";
+                "\", \"checkout\": \"" + checkout + "\"";
     }
 }
