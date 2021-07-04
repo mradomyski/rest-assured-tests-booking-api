@@ -17,7 +17,7 @@ public class AuthorizationTest extends TestBase {
     private final Logger logger = LogManager.getLogger(AuthorizationTest.class);
 
 
-    @Test
+    @Test(priority = 1)
     @Step("Get access token")
     public void giveMeAccessToken() throws URISyntaxException, IOException {
 

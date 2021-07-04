@@ -1,0 +1,20 @@
+{
+  "$id": "http://restassured.mradomyski.pl/booking-ids-schema.json",
+  "type": "array",
+  "items": {
+    "$id": "#/items",
+    "anyOf": [
+      {
+        "type": "object",
+        "required": [
+          "bookingid"
+        ],
+        "properties": {
+          "bookingid": {
+            "type": "integer"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -14,7 +14,7 @@ public class GetBookingTest extends TestBase {
     private final Logger logger = LogManager.getLogger(GetBookingTest.class);
 
 
-    @Test
+    @Test(priority = 3)
     @Step("Get specific booking based on provided id")
     public void giveMeSpecificBooking() {
 

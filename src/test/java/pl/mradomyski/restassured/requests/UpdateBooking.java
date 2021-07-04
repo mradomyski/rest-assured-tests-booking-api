@@ -28,7 +28,6 @@ public class UpdateBooking {
                         .assertThat().body(matchesJsonSchemaInClasspath("schemas/booking-schema.json"))
                         .extract()
                         .response();
-
     }
 
 }

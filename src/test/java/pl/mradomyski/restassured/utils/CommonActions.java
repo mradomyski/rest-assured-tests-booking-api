@@ -2,9 +2,9 @@ package pl.mradomyski.restassured.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
-import pl.mradomyski.restassured.pojos.Pair;
 import pl.mradomyski.restassured.pojos.Booking;
 import pl.mradomyski.restassured.pojos.BookingDates;
+import pl.mradomyski.restassured.pojos.Pair;
 import pl.mradomyski.restassured.requests.Authorization;
 import pl.mradomyski.restassured.requests.GetBookingIds;
 
@@ -34,20 +34,18 @@ public class CommonActions {
         Booking booking = new Booking();
         booking.setFirstName(response.jsonPath().getString("firstname"));
         booking.setLastName(response.jsonPath().getString("lastname"));
-        booking.setTotalPrice(Integer.valueOf(response.jsonPath().getString("totalprice")));
+        booking.setTotalPrice(response.jsonPath().get("totalprice"));
         booking.setBookingDates(
                 new BookingDates
                         (response.jsonPath().getString("bookingdates.checkin"),
-                        response.jsonPath().getString("bookingdates.checkout"))
+                                response.jsonPath().getString("bookingdates.checkout"))
         );
         booking.setAdditionalNeeds(response.jsonPath().getString("additionalneeds"));
 
         return booking;
     }
 
-    public static Pair<String, Booking> getRandomBookingPair() throws IOException {
-        BookingRandomizer bookingRandomizer = new BookingRandomizer();
-        Booking randomBooking = bookingRandomizer.giveMeRandomBooking();
+    public static Pair<String, Booking> getRandomBookingPair(Booking randomBooking) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         String randomBookingJson = mapper
                 .writeValueAsString(randomBooking)
@@ -60,7 +58,6 @@ public class CommonActions {
         JSONUtils jsonUtils = new JSONUtils();
         return jsonUtils.generateStringifiedJSONFromResource(path);
     }
-
 
 
 }

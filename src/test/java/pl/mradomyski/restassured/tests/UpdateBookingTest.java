@@ -9,6 +9,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pl.mradomyski.restassured.pojos.Booking;
+import pl.mradomyski.restassured.utils.BookingRandomizer;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -20,11 +21,12 @@ public class UpdateBookingTest extends TestBase {
 
 
     private final Logger logger = LogManager.getLogger(UpdateBookingTest.class);
+    private BookingRandomizer bookingRandomizer = new BookingRandomizer();
 
-    @Test
+    @Test(priority = 5)
     @Step("Update specific booking with random data")
     public void updateBookingPlease() throws URISyntaxException, IOException {
-        Pair<String, Booking> bookingPair = getRandomBookingPair();
+        Pair<String, Booking> bookingPair = getRandomBookingPair(bookingRandomizer.giveMeRandomBooking());
 
         Response response = updateBooking(bookingPair.getKey(), getRandomExistingBookingId());
         Booking responseBooking = parseBooking(response);
