@@ -25,7 +25,7 @@ public class PartialUpdateBooking {
                         .contentType(ContentType.JSON)
                         .body(jsonBody)
                         .when()
-                        .put("/booking/" + id)
+                        .patch("/booking/" + id)
                         .then().log().ifValidationFails(LogDetail.BODY).statusCode(200)
                         .assertThat().body(matchesJsonSchemaInClasspath("schemas/booking-schema.json"))
                         .extract()
