@@ -11,17 +11,15 @@ import java.util.List;
 import static pl.mradomyski.restassured.requests.GetBookingIds.getBookingIds;
 
 public class GetBookingIdsTest extends TestBase {
-
-
     private final Logger logger = LogManager.getLogger(GetBookingIdsTest.class);
-
 
     @Test(priority = 2)
     @Step("Get booking ids list")
+
     public void giveMeBookingIds() {
+
         List<Integer> response = getBookingIds();
         Assert.assertNotNull(response);
-
         logger.info("Getting the list of booking ids");
     }
 

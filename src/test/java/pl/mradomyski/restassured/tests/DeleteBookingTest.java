@@ -12,16 +12,13 @@ import static pl.mradomyski.restassured.requests.DeleteBooking.deleteBooking;
 
 public class DeleteBookingTest extends TestBase {
 
-
     private final Logger logger = LogManager.getLogger(DeleteBookingTest.class);
-
 
     @Test(priority = 6)
     @Step("Delete specific booking")
     public void deleteThisBooking() throws URISyntaxException, IOException {
 
         deleteBooking();
-
         logger.info("Deleteting specific booking");
     }
 }

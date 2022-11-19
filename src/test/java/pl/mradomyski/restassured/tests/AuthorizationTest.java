@@ -13,9 +13,7 @@ import static pl.mradomyski.restassured.utils.CommonActions.getAccessToken;
 
 public class AuthorizationTest extends TestBase {
 
-
     private final Logger logger = LogManager.getLogger(AuthorizationTest.class);
-
 
     @Test(priority = 1)
     @Step("Get access token")
@@ -23,9 +21,7 @@ public class AuthorizationTest extends TestBase {
 
         String accessToken = getAccessToken();
         Assert.assertNotNull(accessToken);
-
         System.out.println("ACCESS TOKEN: " + accessToken);
-
         logger.info("Getting access token");
     }
 }
