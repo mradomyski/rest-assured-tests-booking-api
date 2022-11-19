@@ -19,13 +19,13 @@ import static pl.mradomyski.restassured.utils.CommonActions.*;
 
 public class UpdateBookingTest extends TestBase {
 
-
     private final Logger logger = LogManager.getLogger(UpdateBookingTest.class);
     private BookingRandomizer bookingRandomizer = new BookingRandomizer();
 
     @Test(priority = 5)
     @Step("Update specific booking with random data")
     public void updateBookingPlease() throws URISyntaxException, IOException {
+
         Pair<String, Booking> bookingPair = getRandomBookingPair(bookingRandomizer.giveMeRandomBooking());
 
         Response response = updateBooking(bookingPair.getKey(), getRandomExistingBookingId());

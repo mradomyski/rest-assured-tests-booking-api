@@ -24,8 +24,4 @@ public class DeleteBooking {
                         .extract()
                         .response();
     }
-
-    public static String parseForAccessToken(Response loginResponse) {
-        return loginResponse.jsonPath().getString("token");
-    }
 }

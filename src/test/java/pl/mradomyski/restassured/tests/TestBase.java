@@ -5,7 +5,6 @@ import org.testng.annotations.BeforeClass;
 
 public class TestBase {
 
-
     @BeforeClass
     public static void setup() {
 

@@ -25,9 +25,11 @@ public class CreateBookingTest extends TestBase {
     @Test(priority = 4)
     @Step("Create a booking with random data")
     public void createBookingPlease() throws IOException {
+
         Pair<String, Booking> bookingPair = getRandomBookingPair(bookingRandomizer.giveMeRandomBooking());
         Response response = createBooking(bookingPair.getKey());
         Booking responseBooking = parseBooking(response);
+
         ObjectMapper mapper = new ObjectMapper();
         Assert.assertEquals(
                 mapper.readTree(responseBooking.toString()),

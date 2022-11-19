@@ -10,9 +10,7 @@ import static pl.mradomyski.restassured.utils.CommonActions.getRandomExistingBoo
 
 public class GetBookingTest extends TestBase {
 
-
     private final Logger logger = LogManager.getLogger(GetBookingTest.class);
-
 
     @Test(priority = 3)
     @Step("Get specific booking based on provided id")

@@ -19,18 +19,13 @@ import static pl.mradomyski.restassured.utils.CommonActions.*;
 
 public class PartialUpdateBookingTest extends TestBase {
 
-
     private final Logger logger = LogManager.getLogger(PartialUpdateBookingTest.class);
     private final BookingRandomizer bookingRandomizer = new BookingRandomizer();
-/*
-           This request gives 400, even while using curl request from the docs.
+
+//           This request gives 400, there's some issue in the app itself
     @Test
     @Step("Partially update specific booking with random data")
     public void partiallyUpdateBookingPlease() throws URISyntaxException, IOException {
-
-
-
-
 
         Response response = partiallyUpdateBooking(getRandomExistingBookingId());
         Booking responseBooking = parseBooking(response);
@@ -46,5 +41,5 @@ public class PartialUpdateBookingTest extends TestBase {
 
     }
 
-*/
+
 }
