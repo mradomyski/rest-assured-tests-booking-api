@@ -19,6 +19,7 @@ import static pl.mradomyski.restassured.utils.CommonActions.*;
 public class PartialUpdateBookingTest extends TestBase {
 
     private final Logger logger = LogManager.getLogger(PartialUpdateBookingTest.class);
+    private final Gson gson = new Gson();
 
     @Test
     @Step("Partially update specific booking with random data")
@@ -28,7 +29,6 @@ public class PartialUpdateBookingTest extends TestBase {
 
         BookingRandomizer randomizer = new BookingRandomizer();
         Booking alteredBooking = randomizer.giveMeRandomCredentials();
-        Gson gson = new Gson();
         String requestBody = gson.toJson(alteredBooking);
 
         Response response = partiallyUpdateBooking(getRandomExistingBookingId(), requestBody, accessToken);
