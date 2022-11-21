@@ -13,9 +13,8 @@ import static pl.mradomyski.restassured.utils.CommonActions.getAccessToken;
 
 public class UpdateBooking {
 
-    public static Response updateBooking(String randomBookingJson, Integer id) throws IOException, URISyntaxException {
+    public static Response updateBooking(String randomBookingJson, Integer id, String accessToken) throws IOException, URISyntaxException {
 
-        String accessToken = getAccessToken();
         return
                 given()
                         .header("Cookie", "token=" + accessToken)

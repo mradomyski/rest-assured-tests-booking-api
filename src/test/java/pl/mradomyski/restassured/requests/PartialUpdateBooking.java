@@ -1,8 +1,11 @@
 package pl.mradomyski.restassured.requests;
 
+import com.google.gson.Gson;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import pl.mradomyski.restassured.pojos.Booking;
+import pl.mradomyski.restassured.utils.BookingRandomizer;
 
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -14,16 +17,14 @@ import static pl.mradomyski.restassured.utils.CommonActions.getJsonBodyString;
 
 public class PartialUpdateBooking {
 
-    public static Response partiallyUpdateBooking (Integer id) throws IOException, URISyntaxException {
-        String jsonBody = getJsonBodyString("/testdata/partial-booking-update.json");
+    public static Response partiallyUpdateBooking (Integer id, String requestBody, String accessToken) throws IOException, URISyntaxException {
 
-        String accessToken = getAccessToken();
         return
                 given()
                         .header("Cookie", "token=" + accessToken)
                         .header("Accept", "application/json")
                         .contentType(ContentType.JSON)
-                        .body(jsonBody)
+                        .body(requestBody)
                         .when()
                         .patch("/booking/" + id)
                         .then().log().ifValidationFails(LogDetail.BODY).statusCode(200)
