@@ -25,10 +25,12 @@ public class UpdateBookingTest extends TestBase {
     @Test(priority = 5)
     @Step("Update specific booking with random data")
     public void updateBookingPlease() throws URISyntaxException, IOException {
+        String requestBodyForAccessToken = getJsonBodyString("/testdata/user-login.json");
+        String accessToken = getAccessToken(requestBodyForAccessToken);
 
         Pair<String, Booking> bookingPair = getRandomBookingPair(bookingRandomizer.giveMeRandomBooking());
 
-        Response response = updateBooking(bookingPair.getKey(), getRandomExistingBookingId());
+        Response response = updateBooking(bookingPair.getKey(), getRandomExistingBookingId(), accessToken);
         Booking responseBooking = parseBooking(response);
 
         ObjectMapper mapper = new ObjectMapper();

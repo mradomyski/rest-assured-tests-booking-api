@@ -1,9 +1,0 @@
-{
-  "$id": "http://restassured.mradomyski.pl/auth-schema.json",
-  "definitions": {
-    "token": {
-      "$id": "#token",
-      "type": "string"
-    }
-  }
-}
