@@ -14,7 +14,8 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 import static pl.mradomyski.restassured.requests.PartialUpdateBooking.partiallyUpdateBooking;
-import static pl.mradomyski.restassured.utils.CommonActions.*;
+import static pl.mradomyski.restassured.utils.CommonActions.getRandomExistingBookingId;
+import static pl.mradomyski.restassured.utils.CommonActions.parseBooking;
 
 public class PartialUpdateBookingTest extends TestBase {
 
@@ -36,8 +37,7 @@ public class PartialUpdateBookingTest extends TestBase {
 
         Assert.assertEquals(responseBooking.getFirstName(), alteredBooking.getFirstName());
         Assert.assertEquals(responseBooking.getLastName(), alteredBooking.getLastName());
-
-
+  
         logger.info("Partially updating booking with random data");
 
     }
