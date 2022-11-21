@@ -9,8 +9,6 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 import static pl.mradomyski.restassured.requests.DeleteBooking.deleteBooking;
-import static pl.mradomyski.restassured.utils.CommonActions.getAccessToken;
-import static pl.mradomyski.restassured.utils.CommonActions.getJsonBodyString;
 
 public class DeleteBookingTest extends TestBase {
 
@@ -19,11 +17,8 @@ public class DeleteBookingTest extends TestBase {
     @Test(priority = 6)
     @Step("Delete specific booking")
     public void deleteThisBooking() throws URISyntaxException, IOException {
-        String requestBodyForAccessToken = getJsonBodyString("/testdata/user-login.json");
-        String accessToken = getAccessToken(requestBodyForAccessToken);
 
-        deleteBooking(accessToken);
-
+        deleteBooking();
         logger.info("Deleteting specific booking");
     }
 }

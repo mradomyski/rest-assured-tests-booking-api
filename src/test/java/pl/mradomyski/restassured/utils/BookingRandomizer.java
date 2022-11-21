@@ -15,13 +15,6 @@ public class BookingRandomizer {
     final List<String> bookingDetailsList = new ArrayList<>();
 
 
-    public Booking giveMeRandomCredentials() {
-        String firstName = getRandomName();
-        String lastName = getRandomName();
-
-        return new Booking(firstName, lastName);
-    }
-
     public Booking giveMeRandomBooking() {
 
         Booking randomBooking = new Booking();
@@ -77,7 +70,7 @@ public class BookingRandomizer {
         return 5 + (int) (Math.random() * ((10 - 5) + 1));
     }
 
-    public String getRandomName() {
+    private String getRandomName() {
         StringBuilder builder = new StringBuilder();
         while (builder.toString().length() == 0) {
             int length = rand.nextInt(5) + 5;

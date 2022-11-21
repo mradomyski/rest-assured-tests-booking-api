@@ -12,8 +12,9 @@ import static pl.mradomyski.restassured.utils.CommonActions.getRandomExistingBoo
 
 public class DeleteBooking {
 
-    public static Response deleteBooking(String accessToken) throws IOException, URISyntaxException {
+    public static Response deleteBooking() throws IOException, URISyntaxException {
 
+        String accessToken = getAccessToken();
         return
                 given()
                         .header("Cookie", "token=" + accessToken)

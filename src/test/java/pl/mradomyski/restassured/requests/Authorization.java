@@ -13,15 +13,17 @@ import static pl.mradomyski.restassured.utils.CommonActions.getJsonBodyString;
 
 public class Authorization {
 
-    public static Response getToken(String requestBody) throws URISyntaxException, IOException {
+    public static Response getToken() throws URISyntaxException, IOException {
+        String jsonBody = getJsonBodyString("/testdata/user-login.json");
 
         return
                 given()
                         .contentType(ContentType.JSON)
-                        .body(requestBody)
+                        .body(jsonBody)
                         .when()
                         .post("/auth")
                         .then().log().ifValidationFails(LogDetail.BODY).statusCode(200)
+                        .assertThat().body(matchesJsonSchemaInClasspath("schemas/auth-schema.json"))
                         .extract()
                         .response();
     }

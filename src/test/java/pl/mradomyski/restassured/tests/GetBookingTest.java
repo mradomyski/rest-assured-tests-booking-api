@@ -17,7 +17,7 @@ public class GetBookingTest extends TestBase {
     public void giveMeSpecificBooking() {
 
         Integer randomBookingId = getRandomExistingBookingId();
-        getBooking(38442);
+        getBooking(randomBookingId);
 
         logger.info("Getting the specific booking");
     }

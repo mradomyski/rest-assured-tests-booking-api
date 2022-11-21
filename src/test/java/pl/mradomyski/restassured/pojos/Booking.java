@@ -1,22 +1,14 @@
 package pl.mradomyski.restassured.pojos;
 
-import com.google.gson.annotations.SerializedName;
-
 import java.util.Objects;
 
 public class Booking {
 
-    @SerializedName("firstname")
     private String firstName;
-    @SerializedName("lastname")
     private String lastName;
-    @SerializedName("totalprice")
     private Integer totalPrice;
-    @SerializedName("depositpaid")
     private boolean depositPaid;
-    @SerializedName("bookingdates")
     private BookingDates bookingDates;
-    @SerializedName("additionalneeds")
     private String additionalNeeds;
 
 
@@ -30,11 +22,6 @@ public class Booking {
         this.depositPaid = depositPaid;
         this.bookingDates = bookingDates;
         this.additionalNeeds = additionalNeeds;
-    }
-
-    public Booking(String firstName, String lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
     }
 
     public String getFirstName() {

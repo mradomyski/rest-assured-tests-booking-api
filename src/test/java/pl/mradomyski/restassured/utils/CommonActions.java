@@ -4,7 +4,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.response.Response;
 import pl.mradomyski.restassured.pojos.Booking;
 import pl.mradomyski.restassured.pojos.BookingDates;
-import pl.mradomyski.restassured.pojos.ErrorMessage;
 import pl.mradomyski.restassured.pojos.Pair;
 import pl.mradomyski.restassured.requests.Authorization;
 import pl.mradomyski.restassured.requests.GetBookingIds;
@@ -25,12 +24,11 @@ public class CommonActions {
         return bookingIdsList.get(rand.nextInt(bookingIdsList.size()));
     }
 
-    public static String getAccessToken(String requestBody) throws URISyntaxException, IOException {
-        Response tokenResponse = Authorization.getToken(requestBody);
+    public static String getAccessToken() throws URISyntaxException, IOException {
+        Response tokenResponse = Authorization.getToken();
 
         return parseForAccessToken(tokenResponse);
     }
-
 
     public static Booking parseBooking(Response response) {
         Booking booking = new Booking();
@@ -45,13 +43,6 @@ public class CommonActions {
         booking.setAdditionalNeeds(response.jsonPath().getString("additionalneeds"));
 
         return booking;
-    }
-
-    public static ErrorMessage parseErrorMessage(Response response) {
-        ErrorMessage errorMessage = new ErrorMessage();
-        errorMessage.setReason(response.jsonPath().getString("reason"));
-
-        return errorMessage;
     }
 
     public static Pair<String, Booking> getRandomBookingPair(Booking randomBooking) throws IOException {
