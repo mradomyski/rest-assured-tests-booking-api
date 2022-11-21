@@ -14,8 +14,7 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 
 import static pl.mradomyski.restassured.requests.PartialUpdateBooking.partiallyUpdateBooking;
-import static pl.mradomyski.restassured.utils.CommonActions.getRandomExistingBookingId;
-import static pl.mradomyski.restassured.utils.CommonActions.parseBooking;
+import static pl.mradomyski.restassured.utils.CommonActions.*;
 
 public class PartialUpdateBookingTest extends TestBase {
 
