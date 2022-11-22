@@ -16,23 +16,23 @@ public class BookingRandomizer {
 
 
     public Booking giveMeRandomCredentials() {
-        String firstName = getRandomName();
-        String lastName = getRandomName();
 
-        return new Booking(firstName, lastName);
+        return new Booking(
+                getRandomName(),
+                getRandomName()
+        );
     }
 
     public Booking giveMeRandomBooking() {
 
-        Booking randomBooking = new Booking();
-        randomBooking.setLastName(getRandomName());
-        randomBooking.setFirstName(getRandomName());
-        randomBooking.setTotalPrice(getRandomPrice());
-        randomBooking.setAdditionalNeeds(getRandomName());
-        randomBooking.setBookingDates(getRandomBookingDates());
-        randomBooking.setDepositPaid(getRandomBoolean());
-
-        return randomBooking;
+        return new Booking(
+                getRandomName(),
+                getRandomName(),
+                getRandomPrice(),
+                getRandomBoolean(),
+                getRandomBookingDates(),
+                getRandomName()
+        );
     }
 
     public Booking giveMeRandomPartialBooking() {
